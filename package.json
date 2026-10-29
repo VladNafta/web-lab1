@@ -1,0 +1,11 @@
+{
+  "name": "web-lab1",
+  "version": "1.0.0",
+  "description": "Лабораторна робота №1: перша веб-сторінка і локальний сервер на Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Мельник В.Я.",
+  "license": "MIT"
+}

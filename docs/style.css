@@ -1,0 +1,72 @@
+/* Кольори винесено у змінні, щоб легко міняти тему */
+:root {
+  --bg: #f4f6fb;
+  --text: #1f2933;
+  --card: #ffffff;
+  --accent: #2563eb;
+}
+
+body.dark {
+  --bg: #111827;
+  --text: #e5e7eb;
+  --card: #1f2937;
+  --accent: #60a5fa;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  padding: 32px 16px;
+  text-align: center;
+  background: var(--accent);
+  color: #fff;
+}
+
+header button {
+  padding: 8px 16px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Сітка карток: кількість колонок залежить від ширини екрана */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  padding: 16px;
+  border-radius: 10px;
+  background: var(--card);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.tools li {
+  margin: 6px 0;
+}
+
+footer {
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+}
